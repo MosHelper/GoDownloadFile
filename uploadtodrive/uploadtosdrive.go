@@ -63,7 +63,7 @@ func Upload(pathfile string, filename string) (string, error) {
 	log.Println(drive.URL)
 
 	////////////////////////////////////////////////////////
-	const fileChunk = 5 * (1 << 20) // 1 MB, change this to your requirement
+	const fileChunk = 5 * (1 << 20) // 5 MB, change this to your requirement
 
 	totalPartsNum := uint64(math.Ceil(float64(fileSize) / float64(fileChunk)))
 
